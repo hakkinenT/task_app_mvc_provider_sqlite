@@ -1,0 +1,1 @@
+class SqliteOperationException implements Exception {}
