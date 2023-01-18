@@ -69,6 +69,7 @@ The following design pattern were used in this project:
 
 ## App Videos
 The videos below show the execution of the main features of the app.
+
 <a href="https://youtube.com/shorts/NsybokOhC_Q?feature=share" target="_blank">
     <p>Add Task</p>
 </a>
