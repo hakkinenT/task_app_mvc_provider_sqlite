@@ -69,27 +69,21 @@ The following design pattern were used in this project:
 
 ## App Videos
 The videos below show the execution of the main features of the app.
-
-<p float="left">
-    <a href="https://youtube.com/shorts/NsybokOhC_Q?feature=share" target="_blank">
-        <p>Add Task</p>
-    </a>
-    <a href="https://youtube.com/shorts/z7FD61qTf4E?feature=share" target="_blank">
-        <p>Edit Task</p>
-    </a>
-    <a href="https://youtube.com/shorts/zAk9d0ysUuk?feature=share" target="_blank">
-        <p>Remove Task</p>
-    </a>
-</p>
-
-<p float="left">
-    <a href="https://youtube.com/shorts/AFhy0DsJwRY?feature=share" target="_blank">
-        <p>Clear all Tasks in list</p>
-    </a>
-    <a href="https://youtube.com/shorts/Lb4Dk2_Fdm8?feature=share" target="_blank">
-        <p>In App Notification</p>
-    </a>
-    <a href="https://youtube.com/shorts/IB824xrfzqs?feature=share" target="_blank">
-        <p>Notification in background</p>
-    </a>
-</p>
+<a href="https://youtube.com/shorts/NsybokOhC_Q?feature=share" target="_blank">
+    <p>Add Task</p>
+</a>
+<a href="https://youtube.com/shorts/z7FD61qTf4E?feature=share" target="_blank">
+    <p>Edit Task</p>
+</a>
+<a href="https://youtube.com/shorts/zAk9d0ysUuk?feature=share" target="_blank">
+    <p>Remove Task</p>
+</a>
+<a href="https://youtube.com/shorts/AFhy0DsJwRY?feature=share" target="_blank">
+    <p>Clear all Tasks in list</p>
+</a>
+<a href="https://youtube.com/shorts/Lb4Dk2_Fdm8?feature=share" target="_blank">
+    <p>In App Notification</p>
+</a>
+<a href="https://youtube.com/shorts/IB824xrfzqs?feature=share" target="_blank">
+    <p>Notification in background</p>
+</a>
