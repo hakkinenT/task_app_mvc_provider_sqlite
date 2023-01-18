@@ -56,17 +56,21 @@ The following design pattern were used in this project:
 - Adapter
 
 ## App Images
-<img src="assets/images/homepage.png" alt="homepage" width="270" height="480"/>
-<img src="assets/images/addtaskpage.png" alt="addTaskPage" width="270" height="480"/>
-<img src="assets/images/detailspage.png" alt="detailspage" width="270" height="480"/>
-<img src="assets/images/notificationpage.png" alt="notificationpage" width="270" height="480"/>
-<img src="assets/images/datepicker.png" alt="datepickerpage" width="270" height="480"/>
-<img src="assets/images/timepicker.png" alt="timepickerpage" width="270" height="480"/>
+<p float="left">
+    <img src="assets/images/homepage.png" alt="homepage" width="270" height="480"/>
+    <img src="assets/images/addtaskpage.png" alt="addTaskPage" width="270" height="480"/>
+    <img src="assets/images/detailspage.png" alt="detailspage" width="270" height="480"/>
+</p>
+<p float="left">
+    <img src="assets/images/notificationpage.png" alt="notificationpage" width="270" height="480"/>
+    <img src="assets/images/datepicker.png" alt="datepickerpage" width="270" height="480"/>
+    <img src="assets/images/timepicker.png" alt="timepickerpage" width="270" height="480"/>
+</p>
 
 ## App Videos
-![AddTask](https://youtube.com/shorts/NsybokOhC_Q?feature=share)
-![EditTask](https://youtube.com/shorts/z7FD61qTf4E?feature=share)
-![RemoveTask](https://youtube.com/shorts/zAk9d0ysUuk?feature=share)
-![ClearAllTaskList](https://youtube.com/shorts/AFhy0DsJwRY?feature=share)
-![InAppNotification](https://youtube.com/shorts/Lb4Dk2_Fdm8?feature=share)
-![NotificationInBackground](https://youtube.com/shorts/IB824xrfzqs?feature=share)
+[![AddTask](assets/tumbnails/addtask.png)](https://youtube.com/shorts/NsybokOhC_Q?feature=share)
+[![EditTask](assets/tumbnails/edittask.png)](https://youtube.com/shorts/z7FD61qTf4E?feature=share)
+[![RemoveTask](assets/tumbnails/removetask.png)](https://youtube.com/shorts/zAk9d0ysUuk?feature=share)
+[![ClearAllTaskList](assets/tumbnails/clearall.png)](https://youtube.com/shorts/AFhy0DsJwRY?feature=share)
+[![InAppNotification](assets/tumbnails/inappnotification.png)](https://youtube.com/shorts/Lb4Dk2_Fdm8?feature=share)
+[![NotificationInBackground](assets/tumbnails/notificationbackground.png)](https://youtube.com/shorts/IB824xrfzqs?feature=share)
