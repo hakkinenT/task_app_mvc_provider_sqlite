@@ -31,8 +31,8 @@ class TaskNotificationAdapter {
   Future<void> cancelNotification(int id) =>
       notificationService.cancelNotification(id);
 
-  ReceivedNotification _convertToReceivedNotification(Task task) {
-    return ReceivedNotification(
+  CustomNotification _convertToReceivedNotification(Task task) {
+    return CustomNotification(
         id: task.id!,
         title: task.title,
         body: task.description,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
+import 'package:theming/core/local_notification/local_notification_service.dart';
 
 import 'controllers/controllers.dart';
 import 'core/theme/theme.dart';
@@ -11,6 +12,7 @@ import 'injection_container.dart' as di;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   di.init();
+  di.sl<NotificationService>().checkForNotification();
 
   runApp(const MyApp());
 }
