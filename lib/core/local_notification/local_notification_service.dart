@@ -46,6 +46,7 @@ class NotificationService {
   //* Em data e hora específicas
   Future<void> scheduledNotification(CustomNotification notification) async {
     try {
+      //* O método zonedScheduled é usado para mostrar notificações agendadas
       await flutterLocalNotificationsPlugin.zonedSchedule(
           notification.id,
           notification.title,
@@ -54,6 +55,8 @@ class NotificationService {
           NotificationDetails(
             android: androidNotificationDetails,
           ),
+          //* Determina se a notificação poderá ser apresentada
+          //* quando app estiver em segundo plano
           androidAllowWhileIdle: true,
           uiLocalNotificationDateInterpretation:
               UILocalNotificationDateInterpretation.absoluteTime,
@@ -68,6 +71,7 @@ class NotificationService {
   Future<void> scheduleDailyNotification(
       CustomNotification notification) async {
     try {
+      //* O método zonedScheduled é usado para mostrar notificações agendadas
       await flutterLocalNotificationsPlugin.zonedSchedule(
           notification.id,
           notification.title,
@@ -76,9 +80,15 @@ class NotificationService {
           NotificationDetails(
             android: androidNotificationDetails,
           ),
+          //* Determina se a notificação poderá ainda ser apresentada
+          //* quando o device for fechado
           androidAllowWhileIdle: true,
           uiLocalNotificationDateInterpretation:
               UILocalNotificationDateInterpretation.absoluteTime,
+          //* Diz ao plugin que a notificação agendada será recorrente,
+          //* ou seja, se repetira na data e hora agendada
+          //* Nesse caso, a notificação se repetirá diariamente
+          //* na hora agendada
           matchDateTimeComponents: DateTimeComponents.time,
           payload: notification.payload);
     } on Exception catch (e) {
@@ -91,6 +101,7 @@ class NotificationService {
   Future<void> scheduleWeeklyNotification(
       CustomNotification notification) async {
     try {
+      //* O método zonedScheduled é usado para mostrar notificações agendadas
       await flutterLocalNotificationsPlugin.zonedSchedule(
           notification.id,
           notification.title,
@@ -99,9 +110,15 @@ class NotificationService {
           NotificationDetails(
             android: androidNotificationDetails,
           ),
+          //* Determina se a notificação poderá ainda ser apresentada
+          //* quando o device for fechado
           androidAllowWhileIdle: true,
           uiLocalNotificationDateInterpretation:
               UILocalNotificationDateInterpretation.absoluteTime,
+          //* Diz ao plugin que a notificação agendada será recorrente,
+          //* ou seja, se repetira na data e hora agendada
+          //* Nesse caso, a notificação se repetirá semanalmente
+          //* no mesmo dia e hora agendada
           matchDateTimeComponents: DateTimeComponents.dayOfWeekAndTime,
           payload: notification.payload);
     } on Exception catch (e) {
@@ -114,15 +131,22 @@ class NotificationService {
   Future<void> scheduleMonthlyNotification(
       CustomNotification notification) async {
     try {
+      //* O método zonedScheduled é usado para mostrar notificações agendadas
       await flutterLocalNotificationsPlugin.zonedSchedule(
           notification.id,
           notification.title,
           notification.body,
           _nextInstanceOfDay(notification.scheduledDate),
           NotificationDetails(android: androidNotificationDetails),
+          //* Determina se a notificação poderá ainda ser apresentada
+          //* quando o device for fechado
           androidAllowWhileIdle: true,
           uiLocalNotificationDateInterpretation:
               UILocalNotificationDateInterpretation.absoluteTime,
+          //* Diz ao plugin que a notificação agendada será recorrente,
+          //* ou seja, se repetira na data e hora agendada
+          //* Nesse caso, a notificação se repetirá mensalmente
+          //* no mesmo dia e hora agendada
           matchDateTimeComponents: DateTimeComponents.dayOfMonthAndTime,
           payload: notification.payload);
     } on Exception catch (e) {
